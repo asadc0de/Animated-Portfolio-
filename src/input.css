@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Main';
+    src: url('/dist/fonst/NBInternationalProBoo.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Flex';
+    src: url('/dist/fonst/roboto-flex.ttf');
+}
+
+@font-face {
+    font-family: 'Head';
+    src: url('/dist/fonst/Rejouice-Headline.ttf');
+}
+
+@font-face {
+    font-family: 'Matter-Light';
+    src: url('/dist/fonst/matter-light.ttf');
+}
+
+@font-face {
+    font-family: 'Matter-Regular';
+    src: url('/dist/fonst/matter-regular.ttf');
+}
+
+@font-face {
+    font-family: 'Gallery';
+    src: url('/dist/fonst/gallery-modern-regular.ttf');
+}
+
+@font-face {
+    font-family: 'Mori';
+    src: url('/dist/fonst/ppmori.ttf');
+}
+
+
+@keyframes animation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 5%));
+    }
+}
+
+.creative-design {
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.project-section {
+    display: none;
+}
+
+.project-section.active {
+    display: flex;
+}
+
+
+.wrapper {
+    margin-top: 2rem;
+    width: 100%;
+    margin-inline: auto;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+        right: -200px;
+    }
+}
+
+.itemLeft,
+.itemRight {
+    border-radius: 6px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.itemLeft {
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+}
+
+.itemRight {
+    right: max(calc(200px * 8), calc(100% + 200px));
+    animation-name: scrollRight;
+}
+
+.item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+
+
+/* --------------------------- */
+
+
+
+.wrapper1 {
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes scroll-Left {
+    to {
+        left: -30vw;
+    }
+}
+
+
+.wrapper1 .video1 {
+    width: 30vw;
+    height: 19vw;
+    background-color: #e11d48;
+    border-radius: 300px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    border: 1px solid black;
+}
+
+.wrapper1 .text1 {
+    border: 1px solid black;
+    border-radius: 300px;
+    color: #121212;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+
+.wrapper1 .item-Left {
+    left: max(calc(30vw * 8), 100%);
+    animation-name: scroll-Left;
+}
+
+
+.wrapper1 .item-1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.wrapper1 .item-2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.wrapper1 .item-3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.wrapper1 .item-4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.wrapper1 .item-5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.wrapper1 .item-6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.wrapper1 .item-7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.wrapper1 .item-8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+
+
+
+/* ---------------------------- */
+
+@media screen and (max-width:500px) {
+
+    @keyframes scrollLeft {
+        to {
+            left: -130px;
+        }
+    }
+
+    @keyframes scrollRight {
+        to {
+            right: -130px;
+        }
+    }
+
+    .itemLeft {
+        left: max(calc(130px * 8), 100%);
+        animation-name: scrollLeft;
+    }
+
+    .itemRight {
+        right: max(calc(130px * 8), calc(100% + 130px));
+        animation-name: scrollRight;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* People often call me the 
+
+creates  your website from a to www.
+
+Come and say hello!  */
