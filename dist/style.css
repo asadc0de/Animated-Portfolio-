@@ -944,6 +944,10 @@ video {
   height: 100%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -1035,10 +1039,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-0 {
-  width: 0px;
 }
 
 .translate-x-0 {
@@ -1178,16 +1178,6 @@ video {
 
 .translate-y-\[40px\] {
   --tw-translate-y: 40px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[\] {
-  --tw-translate-x: ;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[100\] {
-  --tw-translate-x: 100;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2067,7 +2057,7 @@ body {
 @font-face {
   font-family: 'Head';
 
-  src: url('/dist/fonts/Rejouice-Headline.ttf') format('truetype');
+  src: url('/dist/fonts/Rejouice-Headline.woff2') format('woff2');
 
   font-display: swap;
 }
@@ -2075,7 +2065,7 @@ body {
 @font-face {
   font-family: 'Matter-Light';
 
-  src: url('/dist/fonts/matter-light.ttf') format('truetype');
+  src: url('/dist/fonts/matter-light.woff2') format('woff2');
 
   font-display: swap;
 }
@@ -2083,7 +2073,7 @@ body {
 @font-face {
   font-family: 'Gallery';
 
-  src: url('/dist/fonts/gallery-modern-regular.ttf') format('truetype');
+  src: url('/dist/fonts/gallery-modern-regular.woff2') format('woff2');
 
   font-display: swap;
 }
@@ -2091,7 +2081,7 @@ body {
 @font-face {
   font-family: 'Mori';
 
-  src: url('/dist/fonts/ppmori.ttf') format('truetype');
+  src: url('/dist/fonts/ppmori.woff2') format('woff2');
 
   font-display: swap;
 }
@@ -3175,4 +3165,3 @@ body {
     font-size: 2vw;
   }
 }
-  
