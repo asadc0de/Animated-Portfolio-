@@ -1,118 +1,37 @@
-// Navigation Bar Animation
-function navBarAnimation() {
-    let navBarLinks = document.querySelectorAll('.navBarLinks');
-
-    navBarLinks.forEach((link) => {
-        link.addEventListener('mouseenter', () => {
-            // console.log(link.firstElementChild);
-            let tl = gsap.timeline();
-            tl.to(link, { // target the specific link being hovered over
-                transform: 'translateY(-52.5%)',
-                duration: 0.5
-            }, 'anime12');
-            tl.from(link.firstElementChild, {
-                // target the li elements inside the hovered link
-                duration: 0.5
-            }, 'anime12');
-        });
-
-        link.addEventListener('mouseleave', () => {
-            let tl = gsap.timeline();
-            tl.to(link, { // target the specific link being hovered over
-                transform: 'translateY(2.5%)',
-                duration: 0.5
-            }, 'anime13');
-            tl.from(link.lastElementChild, { // target the li elements inside the hovered link
-                duration: 0.5
-            }, 'anime13');
-        });
-    });
-}
-navBarAnimation();
-
-// Menu Icon Animation
-function menuIconAnimation() {
-    const menuContainer = document.querySelector('.icon-container');
-    const menuIcon = document.querySelector('.menuIcon');
-    const navBAR = document.querySelector('.navBAR');
-
-    let flag = false;
-    menuIcon.addEventListener('click', () => {
-        let tl = gsap.timeline();
-        if (flag === false) {
-            tl.to(menuContainer.firstElementChild, {
-                transform: 'rotate(45deg)',
-                duration: 0.5,
-                backgroundColor: '#000',
-            }, 'anime14')
-                .to(menuContainer.lastElementChild, {
-                    transform: 'rotate(-45deg)',
-                    duration: 0.5,
-                    top: '49%',
-                    backgroundColor: '#000'
-                }, 'anime14')
-                .to(navBAR, {
-                    transform: 'translateX(0%)',
-                    right: '0%'
-                }, 'anime14')
-                .to('.navBAR2', {
-                    opacity: 1,
-                    duration: .4
-                }, 'anime14')
-                .from('.navBarLinksMain1', {
-                    opacity: 0,
-                    transform: 'translateX(60%)',
-                    duration: .5,
-                    stagger: .1
-                }, 'anime14')
-                .from('.navBarLinksMain', {
-                    opacity: 0,
-                    transform: 'translateX(40%)',
-                    duration: .3,
-                    stagger: .1
-                }, 'anime14');
-            flag = true;
-        } else {
-            tl.to(menuContainer.firstElementChild, {
-                transform: 'rotate(0deg)',
-                duration: 0.5,
-                backgroundColor: '#fff'
-            }, 'anime14')
-                .to(menuContainer.lastElementChild, {
-                    transform: 'rotate(0deg)',
-                    duration: 0.5,
-                    top: '5px',
-                    backgroundColor: '#fff'
-                }, 'anime14')
-                .to(navBAR, {
-                    right: '-100%',
-                    duration: 0.5,
-                }, 'anime14')
-                .to('.navBAR2', {
-                    opacity: 0,
-                    duration: .3
-                }, 'anime14');
-            flag = false;
-        }
-    });
-}
-menuIconAnimation();
+window.addEventListener('load', function() {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/src/input.css';
+    document.head.appendChild(link);
+});
+// Body's Background Color Animation
+gsap.to('body', {
+    backgroundColor: '#000000',
+    duration: 3,
+    scrollTrigger: {
+        scrub: true,
+        scroller: '.main',
+        trigger: '.footerBG',
+        // markers: true,
+        start: 'top 40%',
+        end: 'top 10%'
+    }
+});
 
 // Project Text Animation
 function projectText() {
     let text = document.querySelector('.proj-text');
     let tl = gsap.timeline();
-    tl.from('.proj-text', {
-        opacity: 0,
+    tl.to('.proj-text', {
+        opacity: 1,
         duration: 1,
-        y: 25
+        y: 0,
     }, 'anime1');
     // Project Section Animation
-    tl.from('.proj-section-row1', {
-        y: 30,
+    tl.to('.proj-section-row1', {
+        y: 0,
         duration: 1,
-        opacity: 0,
-        delay: .4
+        opacity: 1,
     }, 'anime1');
     // Function to handle mouseenter event
     function handleMouseEnter() {
@@ -158,62 +77,134 @@ projectText();
 
 // Project Section Animation
 function projectSection() {
-    gsap.from('.proj-section-row6', {
-        y: 40,
+    gsap.to('.proj-section-row6', {
+        y: 0,
         duration: 1,
-        opacity: 0,
-        delay:.5,
+        opacity: 1,
+        delay: .6,
         scrollTrigger: {
-            scroller: 'body',
+            scroller: '.main',
             trigger: '.proj-section-row6',
             start: 'top 98%',
             end: 'top 40%',
             // markers: true
         }
     });
-    gsap.from('.proj-section-row2', {
-        y: 40,
+    gsap.to('.proj-section-row2', {
+        y: 0,
         duration: 1,
-        opacity: 0,
+        opacity: 1,
         scrollTrigger: {
-            scroller: 'body',
+            scroller: '.main',
             trigger: '.proj-section-row2',
             start: 'top 96%',
             end: 'top 40%',
             // markers: true
         }
     });
-    gsap.from('.proj-section-row3', {
-        y: 40,
+    gsap.to('.proj-section-row3', {
+        y: 0,
         duration: 1,
-        opacity: 0,
+        opacity: 1,
         scrollTrigger: {
-            scroller: 'body',
+            scroller: '.main',
             trigger: '.proj-section-row3',
             start: 'top 96%',
             end: 'top 40%',
             // markers: true
         }
     });
-    gsap.from('.proj-section-row4', {
-        y: 40,
+    gsap.to('.proj-section-row4', {
+        y: 0,
         duration: 1,
-        opacity: 0,
+        opacity: 1,
         scrollTrigger: {
-            scroller: 'body',
+            scroller: '.main',
             trigger: '.proj-section-row4',
             start: 'top 96%',
             end: 'top 40%',
             // markers: true
         }
     });
-    gsap.from('.proj-section-row5', {
-        y: 40,
+    gsap.to('.proj-section-row5', {
+        y: 0,
         duration: 1,
-        opacity: 0,
+        opacity: 1,
         scrollTrigger: {
-            scroller: 'body',
+            scroller: '.main',
             trigger: '.proj-section-row5',
+            start: 'top 96%',
+            end: 'top 40%',
+            // markers: true
+        }
+    });
+    gsap.to('.proj-section-row7', {
+        y: 0,
+        duration: 1,
+        opacity: 1,
+        scrollTrigger: {
+            scroller: '.main',
+            trigger: '.proj-section-row7',
+            start: 'top 96%',
+            end: 'top 40%',
+            // markers: true
+        }
+    });
+    gsap.to('.proj-section-row8', {
+        y: 0,
+        duration: 1,
+        opacity: 1,
+        scrollTrigger: {
+            scroller: '.main',
+            trigger: '.proj-section-row8',
+            start: 'top 96%',
+            end: 'top 40%',
+            // markers: true
+        }
+    });
+    gsap.to('.proj-section-row9', {
+        y: 0,
+        duration: 1,
+        opacity: 1,
+        scrollTrigger: {
+            scroller: '.main',
+            trigger: '.proj-section-row9',
+            start: 'top 96%',
+            end: 'top 40%',
+            // markers: true
+        }
+    });
+    gsap.to('.proj-section-row10', {
+        y: 0,
+        duration: 1,
+        opacity: 1,
+        scrollTrigger: {
+            scroller: '.main',
+            trigger: '.proj-section-row10',
+            start: 'top 96%',
+            end: 'top 40%',
+            // markers: true
+        }
+    });
+    gsap.to('.proj-section-row11', {
+        y: 0,
+        duration: 1,
+        opacity: 1,
+        scrollTrigger: {
+            scroller: '.main',
+            trigger: '.proj-section-row11',
+            start: 'top 96%',
+            end: 'top 40%',
+            // markers: true
+        }
+    });
+    gsap.to('.proj-section-row12', {
+        y: 0,
+        duration: 1,
+        opacity: 1,
+        scrollTrigger: {
+            scroller: '.main',
+            trigger: '.proj-section-row12',
             start: 'top 96%',
             end: 'top 40%',
             // markers: true
@@ -222,3 +213,24 @@ function projectSection() {
 }
 projectSection();
 
+// Website Visit Links
+let webVisitParent = document.querySelectorAll('.webVisitParent');
+webVisitParent.forEach(element => {
+    element.addEventListener('mouseenter', (e) => {
+        let webVisitLink = e.target.querySelector('.webVisitLinks');
+        gsap.to(webVisitLink, {
+            y: 0,
+            duration: 0.5,
+            opacity: 1,
+        });
+    });
+
+    element.addEventListener('mouseleave', (e) => {
+        let webVisitLink = e.target.querySelector('.webVisitLinks');
+        gsap.to(webVisitLink, {
+            y: 100,
+            duration: 0.5,
+            opacity: 0,
+        });
+    });
+});

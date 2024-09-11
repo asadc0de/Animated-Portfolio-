@@ -1,16 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./dist/*.html','./dist/projects/*.html','./dist/about/*.html'],
+  content: ['./dist/*.html','./dist/projects/*.html','./dist/about/*.html','./dist/services/*.html','./dist/contact/*.html'],
   theme: {
     extend: {
       fontFamily: {
-        'main': ['Main'],
-        'head': ['Head'],
-        'mregular': ['Matter-Regular'],
         'mlight': ['Matter-Light'],
+        'head': ['Head'],
         'gallery': ['Gallery'],
-        'mori': ['Mori'],
-        // 'robotoflex': ['Roboto-Flex']
+        'mori': ['Mori']
       },
     },
   },

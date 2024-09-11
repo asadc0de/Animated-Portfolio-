@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      rel="preload"
+      href="/dist/fonts/matter-light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/dist/fonts/ppmori.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/dist/fonts/gallery-modern-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/dist/fonts/Rejouice-Headline.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/dist/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/dist/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/dist/favicons/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>Services</title>
+  </head>
+  <body class="bg-[#141517] text-[#ffffff] font-mlight selection:bg-[#333333]">
+    <!-- Navigation bar -->
+    <div class="absolute w-full overflow-hidden select-none">
+      <div
+        class="md:w-[50%] w-full navBAR bg-[#ffffff] text-[#000000] h-[100vh] fixed top-0 right-[-100%] z-[100] flex p-[8vw_10vw] md:p-[8vw_5vw] font-mlight"
+      >
+        <section
+          class="w-[35%] p-[1vw] md:flex hidden flex-col items-start gap-[2.5vw] opacity-1 navBAR2 z-[100] relative"
+        >
+          <h3 class="opacity-50">Social</h3>
+          <ul class="text-[1.4vw] flex flex-col gap-[1.1vw]">
+            <a
+              href="https://www.linkedin.com/in/asad-code"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw] z-[100] relative"
+              >
+                <li>LinkedIn</li>
+                <li>LinkedIn</li>
+              </div>
+            </a>
+            <a
+              href="https://github.com/asadc0de"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>GitHub</li>
+                <li>GitHub</li>
+              </div>
+            </a>
+            <a
+              href="https://wa.me/+923150676136?text=Hi%20i%20am%20ASAD%20your%20web%20developer.%20How%20can%20i%20help%20you%20today?"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>WhatsApp</li>
+                <li>WhatsApp</li>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/asad.code"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>Instagram</li>
+                <li>Instagram</li>
+              </div>
+            </a>
+            <a
+              href="https://www.facebook.com/asadmughal7424?mibextid=ZbWKwL"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>Facebook</li>
+                <li>Facebook</li>
+              </div>
+            </a>
+            <a
+              href="mailto:mughalasad449@gmail.com"
+              class="overflow-hidden h-[2vw] project-ms navBarLinksMain1"
+            >
+              <div
+                class="h-fit overflow-hidden navBarLinks flex flex-col gap-[.5vw]"
+              >
+                <li>Email</li>
+                <li>Email</li>
+              </div>
+            </a>
+          </ul>
+        </section>
+        <section
+          class="md:w-[65%] w-full p-[1vw] flex flex-col items-start gap-[15vw] md:gap-[2.5vw] opacity-1 navBAR2 relative md:mt-0 mt-[10vw] z-[100]"
+        >
+          <h3 class="opacity-50 md:mb-0 mb-[4vw]">Menu</h3>
+          <ul
+            class="md:text-[3.5vw] md:leading-[3.5vw] text-[13vw] leading-[10vw] flex flex-col md:gap-[.7vw] gap-[5vw]"
+          >
+            <a
+              href="/dist/index.html"
+              class="overflow-hidden border-b-black border border-t-0 border-l-0 border-r-0 md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="md:translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw]"
+              >
+                <li>What we do</li>
+                <li>What we do</li>
+              </div>
+            </a>
+            <a
+              href="/dist/projects/projects.html"
+              class="overflow-hidden md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw]"
+              >
+                <li>Projects</li>
+                <li>Projects</li>
+              </div>
+            </a>
+            <a
+              href="/dist/services/services.html"
+              class="overflow-hidden md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw]"
+              >
+                <li>Services</li>
+                <li>Services</li>
+              </div>
+            </a>
+            <a
+              href="/dist/about/about.html"
+              class="overflow-hidden md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw] about"
+              >
+                <li>About us</li>
+                <li>About us</li>
+              </div>
+            </a>
+            <a
+              href="/dist/contact/contact.html"
+              class="overflow-hidden md:h-[3.8vw] h-[13vw] navBarLinksMain"
+            >
+              <div
+                class="translate-y-[2.5%] h-fit overflow-hidden navBarLinks flex flex-col md:gap-[.7vw] gap-[2.7vw]"
+              >
+                <li>Contact</li>
+                <li>Contact</li>
+              </div>
+            </a>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Menu Icon -->
+    <div
+      class="menuIcon fixed top-[40px] right-[3%] z-[1000] cursor-pointer p-[15px_20px] project-ms"
+    >
+      <div
+        class="icon-container flex justify-center items-center flex-col relative"
+      >
+        <div class="line w-[30px] h-[1.5px] bg-white absolute"></div>
+        <div class="line w-[30px] h-[1.5px] bg-white absolute top-[5px]"></div>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <div class="main w-full">
+      <!-- NavBar -->
+      <nav
+        class="flex justify-between pl-[3%] pt-[40px] w-full font-head sm:text-[1.6rem] text-[1.3rem] font-semibold"
+      >
+        <!-- Name/Logo -->
+        <h4
+          class="font-mlight tracking-[1px] select-none project-ms md:text-[1.5vw] text-[20.8px]"
+        >
+          asad.code
+        </h4>
+      </nav>
+      <!-- Main Text & Images -->
+      <header
+        class="w-full flex md:flex-row flex-col-reverse px-[5vw] mb-[8vw]"
+      >
+        <!-- Text + Image-->
+        <div
+          class="md:w-[65%] w-full md:pt-[24vw] pt-[20vw] md:text-[3.5vw] text-[5.9vw] md:leading-[3.8vw] leading-[5.9vw] flex flex-col bg-[#141517]"
+        >
+          <div class="overflow-hidden mainText">
+            <p class="translate-y-[125%] rotate-3">
+              My mission is creating world-class
+            </p>
+          </div>
+          <div class="overflow-hidden mainText">
+            <p class="translate-y-[119%] rotate-3">
+              websites where beauty meets art
+            </p>
+          </div>
+          <div class="overflow-hidden mainText">
+            <p class="translate-y-[121%] rotate-3">
+              of sales. Why not to have both?
+            </p>
+          </div>
+          <!-- Svg -->
+          <div
+            class="w-[3vw] self-end md:translate-y-[-20px] md:translate-x-[-40px] translate-x-[-5px] opacity-0 scale-50 rotate-[30deg] smallImage"
+          >
+            <svg
+              class="svgAnime"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="16"
+                y="2"
+                width="32"
+                height="60"
+                rx="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+              ></rect>
+              <rect
+                x="2"
+                y="48"
+                width="32"
+                height="60"
+                rx="16"
+                fill="none"
+                transform="rotate(-90 2 48)"
+                stroke="currentColor"
+                stroke-width="4"
+              ></rect>
+            </svg>
+          </div>
+        </div>
+        <!-- Side Video -->
+        <div
+          class="md:w-[35%] w-full scale-125 flex flex-col items-center md:mt-0 md:pt-[3vw] mt-[10vw] bigVideo opacity-0 bg-[#141517] overflow-hidden"
+        >
+          <video
+            preload="auto"
+            loop
+            autoplay
+            muted
+            class="object-cover w-full h-full mix-blend-screen"
+          >
+            <source src="/dist/assets/designVideo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </header>
+      <!-- Main Content -->
+      <main
+        class="w-full flex flex-col gap-[3vw] px-[5vw] items-center mb-[8vw]"
+      >
+        <!-- Skills Text -->
+        <div
+          class="w-fit relative proj-text cursor-default mb-[5vw] self-start"
+        >
+          <div class="flex justify-start items-center gap-2">
+            <h1
+              class="md:text-[4vw] text-[12vw] md:leading-[4vw] leading-[12vw] font-extralight w-fit"
+            >
+              Services
+            </h1>
+            <svg
+              class="svg"
+              fill="#ffffff"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20px"
+              height="20px"
+              viewBox="0 0 100 100"
+              enable-background="new 0 0 100 100"
+              xml:space="preserve"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M50.5,19.881c-1.104,0-2,0.896-2,2V72.17L33.193,56.609c-0.781-0.781-1.922-0.781-2.703,0 c-0.781,0.78-0.719,2.047,0.062,2.828l18.883,18.857c0.375,0.375,0.899,0.586,1.43,0.586s1.047-0.211,1.422-0.586l18.857-18.857 c0.781-0.781,0.783-2.048,0.002-2.828c-0.781-0.781-2.296-0.781-3.077,0L52.5,71.933V21.881C52.5,20.776,51.604,19.881,50.5,19.881 z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <!-- Line -->
+          <div class="overflow-hidden md:w-[15vw] w-[44.8vw] h-[2px] relative">
+            <div
+              class="md:w-[15vw] w-[58.8vw] h-[.1px] bg-white proj-line2 translate-x-[-100%]"
+            ></div>
+            <div
+              class="md:w-[15vw] w-[58.8vw] h-[.1px] bg-white proj-line translate-x-0"
+            ></div>
+          </div>
+        </div>
+        <!-- Services Section 1 -->
+        <section class="flex flex-wrap gap-[3vw] mt-[15vw] md:mt-0">
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px] cursor-default"
+          >
+            <div class="h-[4vw] overflow-hidden group">
+              <div
+                class="flex flex-col group-hover:translate-y-[-50%] duration-500"
+              >
+                <span>Frontend</span>
+                <span>Frontend</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-monitor md:w-[50px] w-[35px]"
+            >
+              <g>
+                <!-- Monitor Screen -->
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Screen Content (Represents code or UI element) -->
+                <line x1="4" y1="8" x2="20" y2="8">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+                <line x1="4" y1="10" x2="16" y2="10">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+                <line x1="4" y1="12" x2="14" y2="12">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+
+                <!-- Monitor Stand -->
+                <line x1="8" y1="21" x2="16" y2="21">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+                <line x1="12" y1="17" x2="12" y2="21">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px]"
+          >
+            <div class="h-[4vw] overflow-hidden group">
+              <div
+                class="flex flex-col group-hover:translate-y-[-50%] duration-500"
+              >
+                <span>Backend</span>
+                <span>Backend</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-server md:w-[50px] w-[35px]"
+            >
+              <g>
+                <rect
+                  x="4"
+                  y="2"
+                  width="16"
+                  height="20"
+                  rx="2"
+                  ry="2"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <circle
+                  cx="12"
+                  cy="8"
+                  r="1.5"
+                  stroke="currentColor"
+                  fill="currentColor"
+                >
+                  <animate
+                    attributeName="r"
+                    values="1.5;0.8;1.5"
+                    dur="3s"
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+                <circle
+                  cx="12"
+                  cy="16"
+                  r="1.5"
+                  stroke="currentColor"
+                  fill="currentColor"
+                >
+                  <animate
+                    attributeName="r"
+                    values="1.5;0.8;1.5"
+                    dur="3s"
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px]"
+          >
+            <div class="h-[4.2vw] overflow-hidden group">
+              <div
+                class="h-fit flex flex-col group-hover:translate-y-[-52%] duration-500"
+              >
+                <span>Web Design</span>
+                <span>Web Design</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-web-design md:w-[50px] w-[35px]"
+            >
+              <g>
+                <!-- Browser Window Outline -->
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="16"
+                  rx="2"
+                  ry="2"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.5;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Tabs/Title Bar -->
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="2"
+                  rx="1"
+                  ry="1"
+                  fill="currentColor"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.7;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Grid Lines -->
+                <line
+                  x1="6"
+                  y1="7"
+                  x2="18"
+                  y2="7"
+                  stroke="currentColor"
+                  stroke-width="0.5"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.4;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+                <line
+                  x1="6"
+                  y1="9"
+                  x2="18"
+                  y2="9"
+                  stroke="currentColor"
+                  stroke-width="0.5"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.4;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+
+                <!-- Placeholder Boxes -->
+                <rect
+                  x="6"
+                  y="12"
+                  width="5"
+                  height="3"
+                  rx="0.5"
+                  ry="0.5"
+                  fill="currentColor"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.6;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <rect
+                  x="13"
+                  y="12"
+                  width="5"
+                  height="3"
+                  rx="0.5"
+                  ry="0.5"
+                  fill="currentColor"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.6;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+              </g>
+            </svg>
+          </div>
+        </section>
+        <!-- Services Section 2 -->
+        <section class="flex flex-wrap md:gap-[2.1vw] gap-[3vw]">
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px]"
+          >
+            <div class="h-[4vw] overflow-hidden group">
+              <div
+                class="flex flex-col group-hover:translate-y-[-50%] duration-500"
+              >
+                <span>UI/UX</span>
+                <span>UI/UX</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-ui-ux md:w-[50px] w-[35px]"
+            >
+              <g>
+                <!-- Background -->
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="4"
+                  ry="4"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.4;1"
+                    dur="8s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <!-- UI Elements: Thin Rectangles with Slower Enhanced Fade Effect -->
+                <rect
+                  x="5"
+                  y="6"
+                  width="14"
+                  height="2"
+                  rx="1"
+                  ry="1"
+                  fill="currentColor"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.3;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <rect
+                  x="5"
+                  y="11"
+                  width="12"
+                  height="2"
+                  rx="1"
+                  ry="1"
+                  fill="currentColor"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.3;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                    begin="2s"
+                  />
+                </rect>
+                <rect
+                  x="5"
+                  y="16"
+                  width="8"
+                  height="2"
+                  rx="1"
+                  ry="1"
+                  fill="currentColor"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.3;1"
+                    dur="4s"
+                    repeatCount="indefinite"
+                    begin="4s"
+                  />
+                </rect>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px]"
+          >
+            <div class="h-[4vw] overflow-hidden group">
+              <div
+                class="flex flex-col group-hover:translate-y-[-52%] duration-500"
+              >
+                <span>Responsiveness</span>
+                <span>Responsiveness</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-responsiveness md:w-[50px] w-[35px]"
+            >
+              <g>
+                <!-- Background with Fade Effect -->
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="4"
+                  ry="4"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.4;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <!-- Responsive Shapes -->
+                <path d="M4 4 H20 V20 H4 Z" stroke="currentColor" fill="none">
+                  <animate
+                    attributeName="d"
+                    values="M4 4 H20 V20 H4 Z; M2 2 H22 V22 H2 Z; M4 4 H20 V20 H4 Z"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </path>
+                <path
+                  d="M10 10 H14 V14 H10 Z"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="d"
+                    values="M10 10 H14 V14 H10 Z; M8 8 H16 V16 H8 Z; M10 10 H14 V14 H10 Z"
+                    dur="4s"
+                    repeatCount="indefinite"
+                    begin="2s"
+                  />
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px]"
+          >
+            <div class="h-[4vw] overflow-hidden group">
+              <div
+                class="flex flex-col group-hover:translate-y-[-52%] duration-500"
+              >
+                <span>Optimization</span>
+                <span>Optimization</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-web-optimization md:w-[50px] w-[35px]"
+            >
+              <g>
+                <!-- Background with Fade Effect -->
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="4"
+                  ry="4"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.3;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Progress Bar -->
+                <rect
+                  x="4"
+                  y="16"
+                  width="16"
+                  height="2"
+                  rx="1"
+                  ry="1"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="width"
+                    values="0;16;0"
+                    dur="5s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Speedometer -->
+                <path
+                  d="M12 12 L12 6 A6 6 0 0 1 18 12"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="stroke-dasharray"
+                    values="0,38;38,0;0,38"
+                    dur="5s"
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="stroke-dashoffset"
+                    values="0;38;0"
+                    dur="5s"
+                    repeatCount="indefinite"
+                  />
+                </path>
+
+                <!-- Speed Indicator Line -->
+                <line x1="12" y1="12" x2="18" y2="6" stroke="currentColor">
+                  <animate
+                    attributeName="stroke-dasharray"
+                    values="0,14;14,0;0,14"
+                    dur="5s"
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="stroke-dashoffset"
+                    values="0;14;0"
+                    dur="5s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+              </g>
+            </svg>
+          </div>
+        </section>
+        <!-- Services Section 3 -->
+        <section class="flex flex-wrap gap-[3vw] mb-[15vw] md:mb-[2vw] md:mt-0">
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px]"
+          >
+            <div class="h-[4.2vw] overflow-hidden group">
+              <div
+                class="flex flex-col group-hover:translate-y-[-52%] duration-500"
+              >
+                <span>Re-Design</span>
+                <span>Re-Design</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-redesign md:w-[50px] w-[35px]"
+            >
+              <g>
+                <!-- Main Screen -->
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="4"
+                  ry="4"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.5;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Overlapping Layers (indicating new design) -->
+                <rect
+                  x="6"
+                  y="6"
+                  width="12"
+                  height="4"
+                  rx="1"
+                  ry="1"
+                  stroke="currentColor"
+                  fill="none"
+                />
+                <rect
+                  x="6"
+                  y="10"
+                  width="12"
+                  height="4"
+                  rx="1"
+                  ry="1"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.3;1"
+                    dur="3s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <rect
+                  x="6"
+                  y="14"
+                  width="12"
+                  height="4"
+                  rx="1"
+                  ry="1"
+                  stroke="currentColor"
+                  fill="none"
+                />
+
+                <!-- Refresh Symbol -->
+                <path
+                  d="M8 20v-4h4v4H8z M16 4v4h-4V4h4z"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 12 12"
+                    to="360 12 12"
+                    dur="8s"
+                    repeatCount="indefinite"
+                  />
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px]"
+          >
+            <div class="h-[4vw] overflow-hidden group">
+              <div
+                class="flex flex-col group-hover:translate-y-[-52%] duration-500"
+              >
+                <span>Security</span>
+                <span>Security</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-security md:w-[50px] w-[35px]"
+            >
+              <g>
+                <!-- Refined Shield Outline -->
+                <path
+                  d="M12 2L4 6v5c0 5.5 4.5 10.5 8 11 3.5-0.5 8-5.5 8-11V6l-8-4z"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.5;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </path>
+
+                <!-- Lock Symbol -->
+                <rect
+                  x="9"
+                  y="10"
+                  width="6"
+                  height="7"
+                  rx="1"
+                  ry="1"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.5;1"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <line x1="12" y1="13" x2="12" y2="15" stroke="currentColor">
+                  <animate
+                    attributeName="stroke-dasharray"
+                    values="0,2;2,0;0,2"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </line>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="border rounded-[100px] md:p-[2vw] p-[0vw_5vw] text-[4vw] leading-[4vw] flex justify-start items-center bg-[#fdffdb15] frontend-skills gap-[10px]"
+          >
+            <div class="h-[4vw] overflow-hidden group">
+              <div
+                class="flex flex-col group-hover:translate-y-[-50%] duration-500"
+              >
+                <span>Performance</span>
+                <span>Performance</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-web-performance md:w-[50px] w-[35px]"
+            >
+              <!-- Square with Rounded Corners -->
+              <rect
+                x="2"
+                y="2"
+                width="20"
+                height="20"
+                rx="4"
+                ry="4"
+                stroke="currentColor"
+                fill="none"
+              >
+                <animate
+                  attributeName="opacity"
+                  values="1;0.5;1"
+                  dur="6s"
+                  repeatCount="indefinite"
+                />
+              </rect>
+
+              <!-- Performance Indicator (Speed Bar) -->
+              <line
+                x1="8"
+                y1="16"
+                x2="16"
+                y2="16"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <animate
+                  attributeName="stroke-dasharray"
+                  values="0,8;8,0;0,8"
+                  dur="5s"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="stroke-dashoffset"
+                  values="0;8;0"
+                  dur="5s"
+                  repeatCount="indefinite"
+                />
+              </line>
+
+              <!-- Circular Performance Meter -->
+              <circle cx="12" cy="11" r="3" stroke="currentColor" fill="none">
+                <animate
+                  attributeName="stroke-dasharray"
+                  values="0,18;18,0;0,18"
+                  dur="4s"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="stroke-dashoffset"
+                  values="0;18;0"
+                  dur="4s"
+                  repeatCount="indefinite"
+                />
+              </circle>
+            </svg>
+          </div>
+        </section>
+      </main>
+      <!-- Footer Section -->
+      <footer
+        class="w-full text-[#ffffff] md:pt-[1.6vw] md:py-[0vw] pb-[15vw] overflow-hidden footerBG"
+      >
+        <!-- Text -->
+        <div
+          class="flex gap-[4vw] uppercase md:text-[12vw] text-[16vw] md:leading-[12vw] leading-[16vw] font-mlight px-[5vw] text6"
+        >
+          <div class="overflow-hidden select-none" id="footerText1">
+            <h1
+              class="flex items-center justify-center font-gallery translate-y-[100%]"
+            >
+              FOLL
+              <div
+                class="bg-[#ffffff] md:w-[9vw] w-[12vw] md:h-[9vw] h-[12vw] rounded-[50%] overflow-hidden p-[1.5vw] translate-y-[-.5vw] opacity-0 scale-75 footerVideo"
+              >
+                <video muted loop autoplay>
+                  <source
+                    src="https://cdn.cuberto.com/cb/icons/1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              W
+            </h1>
+          </div>
+          <div class="overflow-hidden" id="footerText2">
+            <h1 class="translate-y-[100%]">ME</h1>
+          </div>
+        </div>
+        <div class="px-[5vw] md:py-0 pt-[10vw] pb-[7vw]">
+          <h1
+            class="uppercase font-mlight font-[600] relative bottom-[-3vw] select-none"
+          >
+            SOCIAL MEDIA AND CONTACTS
+          </h1>
+        </div>
+        <!-- Social Links -->
+        <div class="w-full font-mori py-[5vw]">
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://wa.me/+923150676136?text=Hi%20i%20am%20ASAD%20your%20web%20developer.%20How%20can%20i%20help%20you%20today?"
+              target="_blank"
+              class="w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw] group"
+            >
+            </a>
+            <a
+              href="https://wa.me/+923150676136?text=Hi%20i%20am%20ASAD%20your%20web%20developer.%20How%20can%20i%20help%20you%20today?"
+              target="_blank"
+              class="flex justify-between items-center w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                WHATSAPP
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg></span
+            ></a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://instagram.com/asad.code"
+              target="_blank"
+              class="2 w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="https://instagram.com/asad.code"
+              target="_blank"
+              class="flex justify-between items-center w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                INSTAGRAM
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg></span
+            ></a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://www.facebook.com/asadmughal7424?mibextid=ZbWKwL"
+              target="_blank"
+              class="w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="https://www.facebook.com/asadmughal7424?mibextid=ZbWKwL"
+              target="_blank"
+              class="flex items-center justify-between w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                FACEBOOK
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg></span
+            ></a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://www.linkedin.com/in/asad-code"
+              target="_blank"
+              class="w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="https://www.linkedin.com/in/asad-code"
+              target="_blank"
+              class="flex items-center justify-between w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                LINKEDIN
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg
+              ></span>
+            </a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="https://github.com/asadc0de"
+              target="_blank"
+              class="link w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="https://github.com/asadc0de"
+              target="_blank"
+              class="flex items-center justify-between w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                GITHUB
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg
+              ></span>
+            </a>
+          </div>
+          <div
+            class="w-full flex justify-between items-center p-[2.5vw_5vw] md:text-[2vw] text-[4vw] border-y-[#8080804f] border border-x-0 relative group"
+          >
+            <a
+              href="mailto:mughalasad449@gmail.com"
+              target="_blank"
+              class="link w-full h-0 bg-[#E0FD60] text-[#000000] font-[600] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-0 duration-500 flex justify-between text-[2vw] group-hover:h-full group-hover:p-[2.5vw_5vw]"
+            >
+            </a>
+            <a
+              href="mailto:mughalasad449@gmail.com"
+              target="_blank"
+              class="flex items-center justify-between w-full overflow-hidden"
+              ><h1
+                class="z-[50] group-hover:text-[#121212] group-hover:font-[600] opacity-0 footer-links translate-y-[40px]"
+              >
+                @EMAIL
+              </h1>
+              <span class="z-[50] group-hover:text-[#121212]"
+                ><svg
+                  class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-miterlimit="10"
+                      d="M17.657 6.343L6.343 17.657"
+                    />
+                    <path
+                      stroke-linejoin="round"
+                      d="M18.101 16.733V7.437A1.53 1.53 0 0 0 16.563 5.9H7.267"
+                    />
+                  </g></svg
+              ></span>
+            </a>
+          </div>
+        </div>
+        <!-- Video -->
+        <div
+          class="w-full md:mt-[2vw] mt-[20vw] p-[3vw_5vw_0vw_5vw] font-mlight flex flex-col justify-center items-center text7 select-none relative z-[1]"
+        >
+          <!-- Bg Video -->
+          <div
+            class="footer-video absolute w-full flex justify-center top-0 left-0 z-[-1] brightness-[.4]"
+          >
+            <video
+              class="object-cover w-[100%] md:w-[37%]"
+              loop
+              autoplay
+              muted
+              loading="lazy"
+            >
+              <source src="/dist/assets/footerVideo.mp4" />
+            </video>
+          </div>
+          <!-- Text + Animation -->
+          <div
+            id="footerHeading1"
+            class="md:text-[10vw] text-[15vw] md:leading-[9vw] leading-[15vw] font-gallery overflow-hidden"
+          >
+            <h1 class="translate-y-[100%]">WANT</h1>
+          </div>
+          <div
+            id="footerHeading2"
+            class="md:text-[10vw] text-[14vw] md:leading-[9vw] leading-[15vw] overflow-hidden md:my-0 my-[4vw]"
+          >
+            <h1 class="translate-y-[100%]">A WEBSITE ?</h1>
+          </div>
+          <!-- Text Animation -->
+          <div
+            id="animateme2"
+            class="scale-[1] flex justify-center w-full px-[10vw] text9"
+          >
+            <div id="animateme" class="scale-[1] select-none">
+              <div
+                class="overflow-hidden relative text-[#E0FD60] font-gallery border-[#E0FD60] border rounded-[8rem] md:px-[18.5vw] px-[30vw] md:py-[4.5vw] py-[6.5vw] w-fit after:w-full after:h-full after:bg-[#E0FD60] after:absolute after:left-0 after:bottom-[-100%] after:rounded-[50%] hover:after:bottom-[0%] hover:after:rounded-[0px] after:duration-500 after:z-[-10] after:ease-in-out z-[10] cursor-default group"
+              >
+                <div
+                  class="absolute md:top-[1%] top-[-6%] left-[4.5%] md:group-hover:top-[-112%] group-hover:top-[-128%] duration-500"
+                >
+                  <h1
+                    class="Create md:text-[10vw] md:leading-[10vw] text-[16vw] leading-[16vw]"
+                  >
+                    TELL US
+                  </h1>
+                  <h1
+                    class="md:text-[10vw] md:leading-[10vw] text-[16vw] leading-[16vw] text-[#121212]"
+                  >
+                    TELL US
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Links -->
+          <div
+            class="w-full pt-[8vw] pb-[2vw] md:flex-row flex flex-col md:mt-0 mt-[20vw] md:mb-0 mb-[2vw] md:px-0 px-[10vw]"
+          >
+            <div
+              class="md:flex-row flex flex-col md:justify-center items-start md:gap-[1vw] gap-[2.5vw] w-[100%] select-none"
+            >
+              <div
+                id="animateme3"
+                class="footerLastLinks scale-[1] flex justify-center"
+              >
+                <div
+                  class="overflow-hidden relative text-[#ffffff] font-mlight border-[#ffffff] border rounded-[8rem] w-fit md:py-[1vw] py-[3.5vw] md:px-[6.9vw] px-[20vw] after:w-full after:h-full after:bg-[#ffffff] after:absolute after:left-0 after:bottom-[-100%] after:rounded-[50%] hover:after:bottom-[0%] hover:after:rounded-[0px] after:duration-500 after:z-[-10] after:ease-in-out z-[10] cursor-default group"
+                >
+                  <div
+                    class="absolute md:top-[11.5%] top-[18%] left-[7.5%] md:group-hover:top-[-60%] group-hover:top-[-70%] duration-500"
+                  >
+                    <h1
+                      class="Create md:text-[1.5vw] text-[4.3vw] md:leading-[1.5vw] leading-[4.3vw] uppercase md:mb-0 mb-[2vw]"
+                    >
+                      contact@asad
+                    </h1>
+                    <h1
+                      class="md:text-[1.5vw] text-[4.3vw] md:leading-[1.5vw] leading-[4.3vw] text-[#121212] uppercase font-[600]"
+                    >
+                      contact@asad
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="animateme4"
+                class="footerLastLinks scale-[1] flex justify-center"
+              >
+                <div
+                  class="overflow-hidden relative text-[#ffffff] font-mlight border-[#ffffff] border rounded-[8rem] w-fit md:py-[1vw] py-[3.5vw] md:px-[6.9vw] px-[17vw] after:w-full after:h-full after:bg-[#ffffff] after:absolute after:left-0 after:bottom-[-100%] after:rounded-[50%] hover:after:bottom-[0%] hover:after:rounded-[0px] after:duration-500 after:z-[-10] after:ease-in-out z-[10] cursor-default group"
+                >
+                  <div
+                    class="absolute md:top-[11.5%] top-[18%] left-[7.5%] md:group-hover:top-[-60%] group-hover:top-[-70%] duration-500"
+                  >
+                    <h1
+                      class="Create md:text-[1.5vw] text-[4.3vw] md:leading-[1.5vw] leading-[4.3vw] uppercase md:mb-0 mb-[2vw]"
+                    >
+                      +923150676136
+                    </h1>
+                    <h1
+                      class="md:text-[1.5vw] text-[4.3vw] md:leading-[1.5vw] leading-[4.3vw] text-[#121212] uppercase font-[600]"
+                    >
+                      +923150676136
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Rights -->
+            <div
+              class="w-[100%] flex items-center justify-center md:mt-0 mt-[15vw] footerLastLinks"
+            >
+              <h3
+                class="md:text-[2vw] text-[3.5vw] selection:text-[#E0FD60] selection:bg-transparent"
+              >
+                All rights &copy; reserved to Asad Ali
+                <span class="date"></span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts & Cdns -->
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.140.0/three.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="/dist/utils/locomotive.js"></script>
+    <script src="./services.js"></script>
+    <script src="/dist/utils/navBar.js"></script>
+    <script src="/dist/utils/mouseFollower.js"></script>
+    <script src="/dist/utils/footer.js"></script>
+  </body>
+</html>

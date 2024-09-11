@@ -1,30 +1,68 @@
+// Preview Animation
+function preView() {
+    gsap.to('.preView', {
+        top: '-100%',
+        duration: .8,
+        delay: .4,
+        borderRadius: '0 0 50% 50%',
+    });
+}
+preView();
+
+// Body's Background Color Animation
+gsap.to('body', {
+    backgroundColor: '#000000',
+    duration: 3,
+    scrollTrigger: {
+        scrub: true,
+        scroller: '.main',
+        trigger: '.footerBG',
+        // markers: true,
+        start: 'top 40%',
+        end: 'top 10%'
+    }
+});
+
 // Main Text + Images Animation
 function mainTextandImage() {
-
     let tl = gsap.timeline();
-    tl.from('.row1-text', {
-        y: '250%',
+    tl.to('.row1-text', {
+        y: '0%',
         duration: .8,
         stagger: .4,
-        transform: 'rotate(3deg)'
+        transform: 'rotate(0deg)',
     }, 'anime');
 
-    tl.from('.row1-img', {
-        x: '101%',
-    });
+    tl.to('.row1-img', {
+        x: '0%',
+        opacity:1,
+        duration:.6
+    }, 'anime2');
 
-    tl.from('.row3-img', {
-        width: '0'
-    });
+    tl.to('.row3-img', {
+        width: '100%',
+        opacity: 1,
+        duration:.6
+    }, 'anime2');
 
-    tl.from('.and', {
-        opacity: 0
+    tl.to('.and', {
+        opacity: 1
     });
+    gsap.fromTo("#heart path",
+        { scale: .9 },
+        {
+            scale: 1.0001,
+            duration: 1,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+        }
+    );
 }
 mainTextandImage();
 
-// Project Text Animation
-function projectText() {
+// Skills Text Animation
+function skillsText() {
     gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline({
         scrollTrigger: {
@@ -81,7 +119,7 @@ function projectText() {
     });
 
 }
-projectText();
+skillsText();
 
 // Section1 Text Animation
 function section1Text() {
@@ -96,25 +134,25 @@ function section1Text() {
         }
     });
 
-    tl.from('.text-section1-line1', {
-        y: '100%',
-        duration: .8,
-        rotation: 2,
+    tl.to('.text-section1-line1', {
+        y: '0%',
+        duration: .5,
+        rotation: 0,
     })
-        .from('.text-section1-line2', {
-            y: '100%',
-            duration: .8,
-            rotation: 2,
+        .to('.text-section1-line2', {
+            y: '0%',
+            duration: .7,
+            rotation: 0,
         }, "<")
-        .from('.text-section1-line3', {
-            y: '100%',
-            duration: .8,
-            rotation: 2,
+        .to('.text-section1-line3', {
+            y: '0%',
+            duration: .9,
+            rotation: 0,
         }, "<")
-        .from('.text-section1-line4', {
-            y: '100%',
-            duration: .8,
-            rotation: 2,
+        .to('.text-section1-line4', {
+            y: '0%',
+            duration: 1,
+            rotation: 0,
         }, "<");
 
 }
@@ -133,169 +171,99 @@ function section2Text() {
         }
     });
 
-    tl.from('.text-section2-line1', {
-        y: '100%',
-        duration: .8,
-        rotation: 2,
+    tl.to('.text-section2-line1', {
+        y: '0%',
+        duration: .5,
+        rotation: 0,
     })
-        .from('.text-section2-line2', {
-            y: '100%',
+        .to('.text-section2-line2', {
+            y: '0%',
             duration: .8,
-            rotation: 2,
+            rotation: 0,
         }, "<")
-        .from('.text-section2-line3', {
-            y: '100%',
-            duration: .8,
-            rotation: 2,
+        .to('.text-section2-line3', {
+            y: '0%',
+            duration: 1,
+            rotation: 0,
         }, "<");
 
 }
 section2Text();
 
 // Frontend Skills Animation
-function section1() {
+function frontendSkills() {
     gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline({
         scrollTrigger: {
             scroller: '.main',
-            trigger: '.sec1',
+            trigger: '.frontend-skills',
             // markers: true,
             start: 'top 96%',
             end: 'top 40%',
         }
     });
-    tl.from('.sec1', {
+    tl.from('.frontend-skills', {
         opacity: 0,
-        duration: .7,
-        stagger: .5,
-        y: 20,
-    });
+        duration: .5,
+        stagger: .2,
+        y: 30,
+    }, 'anime1');
+    tl.from('.frontend-skills div div span', {
+        opacity: 0,
+        duration: .5,
+        stagger: .1,
+    }, 'anime1');
 }
-section1();
+frontendSkills();
+
 // Backend Skills Animation
-function section2() {
+function backendSkills() {
     gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline({
         scrollTrigger: {
             scroller: '.main',
-            trigger: '.sec2',
+            trigger: '.backend-skills',
             // markers: true,
             start: 'top 96%',
             end: 'top 40%',
         }
     });
-    tl.from('.sec2', {
+    tl.from('.backend-skills', {
         opacity: 0,
-        duration: .7,
-        stagger: .5,
-        y: 20,
-    });
+        duration: .5,
+        stagger: .2,
+        y: 30,
+    }, 'anime1');
+    tl.from('.backend-skills div div span', {
+        opacity: 0,
+        duration: .5,
+        stagger: .1,
+    }, 'anime1');
 }
-section2();
+backendSkills();
+
 // Miscellaneous Skills Animation
-function section3() {
+function miscellaneousSkills() {
     gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline({
         scrollTrigger: {
             scroller: '.main',
-            trigger: '.sec3',
+            trigger: '.miscellaneous-skills',
             // markers: true,
             start: 'top 96%',
             end: 'top 40%',
         }
     });
-    tl.from('.sec3', {
+    tl.from('.miscellaneous-skills', {
         opacity: 0,
-        duration: .7,
-        y: 20,
-    });
+        duration: .5,
+        stagger: .2,
+        y: 30,
+    }, 'anime1');
+    tl.from('.miscellaneous-skills div div span', {
+        opacity: 0,
+        duration: .5,
+        stagger: .1,
+    }, 'anime1');
 }
-section3();
-
-//  Philosophy Paragraph Animation
-function footerText() {
-    let tl = gsap.timeline();
-    tl.to('.text6', {
-        onStart: function () {
-            tl.to('#footerText1 h1', {
-                y: '0%',
-                duration: .5
-            }, 'anime10').to('#footerText2 h1', {
-                y: '0%',
-                duration: .5
-            }, 'anime10')
-        },
-        scrollTrigger: {
-            trigger: '.text6',
-            scroller: '.main',
-            // markers: true,
-            start: 'top 94%',
-            end: 'top 70%',
-        }
-    });
-}
-footerText();
-
-// Footer Heading Animation
-function footerHeading() {
-    let tl = gsap.timeline();
-    tl.to('.text7', {
-        onStart: function () {
-            tl.to('#footerHeading1 h1', {
-                y: '0%',
-                duration: .5
-            }, 'anime11').to('#footerHeading2 h1', {
-                y: '0%',
-                duration: .7
-            }, 'anime11')
-        },
-        scrollTrigger: {
-            trigger: '.text7',
-            scroller: '.main',
-            // markers: true,
-            start: 'top 86%',
-            end: 'top 60%',
-        }
-    });
-}
-footerHeading();
-
-// Create Animation Footer
-function createAnimFooter() {
-    let animate = document.getElementById('animateme2');
-    animate.addEventListener('mouseenter', () => {
-        let tl = gsap.timeline();
-        tl.to(animate, {
-            scale: 1.0777,
-            ease: 'linear',
-            duration: .2
-        });
-        tl.from(animate, {
-            scale: 1.0777,
-            ease: 'linear',
-            duration: .2
-        });
-    });
-}
-createAnimFooter();
-
-// Footer Last Heading Animation
-function footerLastHeading() {
-    let tl = gsap.timeline();
-    tl.to('.text9', {
-        onStart: function () {
-            tl.from('#animateme2', {
-                scale: .7,
-                duration: .8
-            }, 'anime3');
-        },
-        scrollTrigger: {
-            trigger: '.text9',
-            scroller: '.main',
-            // markers: true,
-            start: 'top 99%',
-            end: 'top 60%',
-        }
-    });
-}
-footerLastHeading();
+miscellaneousSkills();

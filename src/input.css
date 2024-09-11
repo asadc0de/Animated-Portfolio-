@@ -3,39 +3,39 @@
 @tailwind utilities;
 
 
-@font-face {
-    font-family: 'Main';
-    src: url('/dist/fonst/NBInternationalProBoo.ttf');
+body::-webkit-scrollbar {
+    display: none;
 }
 
-@font-face {
-    font-family: 'Roboto-Flex';
-    src: url('/dist/fonst/roboto-flex.ttf');
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
 
 @font-face {
     font-family: 'Head';
-    src: url('/dist/fonst/Rejouice-Headline.ttf');
+    src: url('/dist/fonts/Rejouice-Headline.woff2') format('woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Matter-Light';
-    src: url('/dist/fonst/matter-light.ttf');
+    src: url('/dist/fonts/matter-light.woff2') format('woff2');
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'Matter-Regular';
-    src: url('/dist/fonst/matter-regular.ttf');
-}
 
 @font-face {
     font-family: 'Gallery';
-    src: url('/dist/fonst/gallery-modern-regular.ttf');
+    src: url('/dist/fonts/gallery-modern-regular.woff2') format('woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Mori';
-    src: url('/dist/fonst/ppmori.ttf');
+    src: url('/dist/fonts/ppmori.woff2') format('woff2');
+    font-display: swap;
 }
 
 
@@ -45,34 +45,36 @@
     }
 
     to {
-        transform: translateX(calc(-100% - 5%));
+        transform: translateX(calc(-100% - 4.5vw));
+        /* Ensure smooth transition */
     }
 }
 
 .creative-design {
     animation-name: animation;
-    animation-duration: 3s;
+    animation-duration: 13s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-}
-
-.project-section {
-    display: none;
-}
-
-.project-section.active {
     display: flex;
+    gap: 4.5vw;
+}
+
+.video-container {
+    overflow: hidden;
+    /* Ensure elements stay inside the viewport */
+    position: relative;
 }
 
 
 .wrapper {
-    margin-top: 2rem;
     width: 100%;
     margin-inline: auto;
     height: 100px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 @keyframes scrollLeft {
@@ -219,9 +221,6 @@
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
-
-
-
 /* ---------------------------- */
 
 @media screen and (max-width:500px) {
@@ -250,13 +249,67 @@
 }
 
 
-html {
-    scroll-behavior: smooth;
+.rotateSVG {
+    /* transform-origin: 100px 100px; */
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sun-core {
+    fill: white;
+    animation: pulse 2s infinite;
 }
 
 
-/* People often call me the 
 
-creates  your website from a to www.
+.overlay.active {
+    top: 0;
+    border-radius: 0px;
+}
 
-Come and say hello!  */
+
+
+
+
+
+@keyframes svgAnime {
+    0% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 148 10;
+    }
+
+    50% {
+        stroke-dasharray: 135 30;
+    }
+
+    100% {
+        stroke-dashoffset: 157;
+        stroke-dasharray: 148 10;
+    }
+}
+
+.svgAnime {
+    animation-name: svgAnime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+.no-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 7000;
+}
