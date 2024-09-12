@@ -694,6 +694,10 @@ video {
   z-index: 7000;
 }
 
+.z-\[10000000\] {
+  z-index: 10000000;
+}
+
 .m-\[3vw\] {
   margin: 3vw;
 }
@@ -2845,6 +2849,10 @@ body {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:justify-end {
