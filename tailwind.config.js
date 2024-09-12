@@ -1,16 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./dist/*.html','./dist/projects/*.html','./dist/about/*.html','./dist/services/*.html','./dist/contact/*.html'],
+  content: [
+    './dist/**/*.html',
+    './utils/**/*.js', 
+    './src/**/*.css'   
+  ],
   theme: {
     extend: {
       fontFamily: {
         'mlight': ['Matter-Light'],
         'head': ['Head'],
         'gallery': ['Gallery'],
-        'mori': ['Mori']
+        'mori': ['Mori'],
       },
     },
   },
   plugins: [],
 }
-

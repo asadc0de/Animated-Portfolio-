@@ -15,26 +15,26 @@ body {
 
 @font-face {
     font-family: 'Head';
-    src: url('/dist/fonts/Rejouice-Headline.woff2') format('woff2');
+    src: url('./fonts/Rejouice-Headline.woff2') format('woff2');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Matter-Light';
-    src: url('/dist/fonts/matter-light.woff2') format('woff2');
+    src: url('./fonts/matter-light.woff2') format('woff2');
     font-display: swap;
 }
 
 
 @font-face {
     font-family: 'Gallery';
-    src: url('/dist/fonts/gallery-modern-regular.woff2') format('woff2');
+    src: url('./fonts/gallery-modern-regular.woff2') format('woff2');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Mori';
-    src: url('/dist/fonts/ppmori.woff2') format('woff2');
+    src: url('./fonts/ppmori.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -46,7 +46,6 @@ body {
 
     to {
         transform: translateX(calc(-100% - 4.5vw));
-        /* Ensure smooth transition */
     }
 }
 
@@ -62,7 +61,6 @@ body {
 
 .video-container {
     overflow: hidden;
-    /* Ensure elements stay inside the viewport */
     position: relative;
 }
 
